@@ -1,0 +1,32 @@
+def pesquisar(termo):
+    if termo.lower() == "resumo do livro":
+        return {
+            "Título": "Mestre dos Games",
+            "Resumo": "Um resumo completo sobre 'Mestre dos Games' que inclui o enredo, temas principais e análise dos personagens.",
+            "Partes": ["Parte 1: Introdução aos Jogos", "Parte 2: Conflitos", "Parte 3: A Jornada Final"],
+            "Personagens": ["Protagonista: Alex", "Antagonista: Max", "Aliado: Joana"]
+        }
+    elif termo.lower() == "materia":
+        return {
+            "História": [
+                "Feudalismo", "Feudo", "As marcas da desigualdade", "Uns oram", "Outros combatem", 
+                "Corveia", "Talha", "Banalidade", "Capitação", "Mão-morta", "Tostão de Pedro", 
+                "Uma vida de (muito) trabalho", "Os mosteiros e a cultura na Idade Média", 
+                "Os mosteiros e a escola para poucos", "Uma cultura de fé", "Crença, poder e medo", 
+                "Bruxas e demônios", "Perseguição às práticas ancestrais", "Mulheres na Idade Média"
+            ],
+            "Matemática": [
+                "Volume de poliedros", "Múltiplos e divisores", "Primos e fatores primos de um número", 
+                "Frações equivalentes"
+            ],
+            "Geografia": [
+                "Domínio da natureza", "Extrativismo vegetal", "Pecuária"
+            ]
+        }
+    else:
+        return "Termo não encontrado. Tente 'Resumo do livro' ou 'materia'."
+
+# Exemplo de uso
+termo = input("Digite o termo que deseja pesquisar: ")
+resultado = pesquisar(termo)
+print(resultado)
